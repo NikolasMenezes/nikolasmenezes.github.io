@@ -1,16 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 /* Reset */
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
 }
 
 /* Variables */
 
-:root{
-    --main-color: #
+:root {
+    --main-color: #dadada;
+    --highlight-color: #004add;
+    --text-color: #333;
+}
+
+/* General */
+
+body{
+    background-color: var(--main-color);
+}
+
+.highlight{
+    color: var(--highlight-color);
+}
+
+
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
