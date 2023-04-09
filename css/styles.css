@@ -13,8 +13,10 @@
 
 :root {
     --main-color: #dadada;
-    --highlight-color: #004add;
+    --secondary-color: #007acc;
+    --main-text-color: #004add;
     --text-color: #333;
+    --border-color: #9f9f9f;
 }
 
 /* General */
@@ -23,13 +25,77 @@ body{
     background-color: var(--main-color);
 }
 
+/* Project */
+
 .highlight{
-    color: var(--highlight-color);
+    font-weight: 600;
 }
 
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* bio container */
+
+#bio-container{
+    max-width: 20vw;
+    min-height: 100vh;
+    text-align: center;
+    padding: 30px 12px;
+    background-color: #ccc;
+    color: var(--main-text-color);
+    border-right: 2px solid var(--border-color);
+}
+
+#bio-container h2{
+    margin-bottom: 20px;
+}
+
+#bio-container p{
+    margin-bottom: 20px;
+}
 
 #profile-pic{
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
+
+#social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+#social-links li a{
+    color: var(--main-text-color);
+    font-size:25px;
+    transition: 150ms;
+}
+
+#social-links li a:hover{
+    opacity: .85;
+}
+
+#mail-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--main-text-color);
+}
+
+#mail-container a{
+    text-decoration: none;
+}
+
+/* About me container */
+
