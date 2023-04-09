@@ -42,6 +42,7 @@ body {
 #bio-container {
     max-width: 20vw;
     min-height: 100vh;
+    height: 100%;
     text-align: center;
     padding: 30px 12px;
     background-color: #ccc;
@@ -111,6 +112,7 @@ body {
 #description {
     margin-top: 10px;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 #btn-projects {
@@ -134,13 +136,18 @@ body {
 
 
 #skills-section-title {
-    margin: 20px 0 10px 0;
+    margin: 20px 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 #skills-container {
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+
 }
 
 .skills-title {
@@ -152,4 +159,43 @@ body {
 
 .skills-box i {
     font-size: 45px;
+}
+
+/* Responsive */
+
+@media (max-width: 950px) {
+    #bio-container {
+        min-width: 30vw;
+        width: 40%;
+    }
+
+    #skills-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 650px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #bio-container {
+        min-width: 100vw;
+        min-height: 80vh;
+    }
+
+    #introducting {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #about-me #name,
+    #about-me #title {
+        text-align: center;
+    }
+
+    #about-me #title {
+        margin-bottom: 30px;
+    }
+
 }
