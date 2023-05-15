@@ -1,90 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS do Projeto -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <!--Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <!-- Dev Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nikolas Menezes</title>
+  <title>NIkolas Menezes</title>
+
+  <!--CSS do Projeto -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 </head>
 
 <body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html"><img src="./assets/img/Nikolas Menezes Logo.svg" alt="Menezes Logo" id="logo"></a>
+      <ul class="navbar-list">
+        <li class="navbar-list-links"><a href="#" class="current">Home</a></li>
+        <li class="navbar-list-links"><a href="#about-me">Sobre Mim</a></li>
+        <li class="navbar-list-links"><a href="#">Projetos</a></li>
+        <li class="navbar-list-links"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div id="container">
-        <aside>
-            <section id="bio-container">
-                <h2>Nikolas Menezes</h2>
-                <img id="profile-pic" src="./img/NIkolasMenezes.jpeg" alt="Nikolas Menezes">
-                <p id="introducting" class="text">Olá, meu nome é Nikolas Menezes e sou <span
-                        class="highlight">desenvolvedor front-end.</span></p>
-                <p class="text"><span id="welcome">Saudações!</span></p>
-                <ul id="social-links">
-                    <li>
-                        <a href="http://https://www.linkedin.com/in/nikolas-matheus-de-menezes-880a79236/"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="http://www.instagram.com/Nikolas_Menezes" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.github.com/NikolasMenezes" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-github"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <div id="mail-container">
-                    <i class="bi bi-envelope"></i>
-                    <a href="mailto:nikolasdev.contato@gmail.com">Entre em contato por email</a>
-                </div>
-            </section>
-        </aside>
-        <main id="about-me">
-            
-            <h1 id="name">Nikolas Menezes</h1>
-            <p id="title"><span class="highlight">Desenvolvedor Front-end</span></p>
-            <p id="description">Desenvolvo páginas estáticas com layouts modernos que proporcionam ótimas experiências aos usuários.
-                <br>Amo a tecnologia e estudo todos os dias para me tornar um profissional mais competente.
-            </p>
-            <a href="https://www.github.com/NikolasMenezes" target="_blank" id="btn-projects"><i class="bi bi-share-fill"></i><span>Ver Projetos</span></a>
-            
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            
-            <p class="description">Conheça as tecnologias que domino:</p>
-            
-            <div id="skills-container">
-                <div class="skills-box">
-                    <p class="skills-title">Front-end</p>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Front-end tools</p>
-                    <i class="devicon-react-plain colored"></i>
-                    <i class="devicon-sass-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Controle de versão</p>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-github-plain colored"></i>
-                </div>
-            </div>
-        </main>
-
+  <main id="about" class="about">
+    <img src="./assets/img/undraw_code_review_re_woeb.svg" class="about-img" alt="">
+    <div>
+      <h1 class="about-title">Nikolas Menezes</h1>
+      <p class="about-subtitle">Front-end developer</p>
+      <ul class="about-social">
+        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="#"><i class="bi bi-github"></i></a></li>
+      </ul>
     </div>
+
+  </main>
+  <a href="#about-me" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
+
+  <section id="about-me">
+    <div id="about-me-description">
+      <div class="about-me">
+        <h2 class="about-me-title">Quem sou eu?</h2>
+        <p class="about-me-subtitle">Eu sou Nikolas Menezes, desenvolvedor web front-end e estudante de análise e
+          desenvolvimento de sistemas na FATEC.<br />
+          Desenvolvo páginas estáticas com layouts modernos que proporcionam ótimas experiências aos usuários.
+          Amo a tecnologia e sempre estou em busca de aprender novas tecnologias para expandir o meu reportório e
+          melhorar o meutrbalho
+        </p>
+      </div>
+      <img src="./assets/img/profile-pic.png" alt="Nikolas Menezes" class="about-me-img">
+    </div>
+
+    <div class="about-me-langs">
+      <h3 class="about-me-langs-title">Tecnologias</h3>
+      <div class="about-me-langs-list">
+        <i class="devicon-html5-plain colored"></i>
+      <i class="devicon-css3-plain colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-sass-plain colored"></i>
+      <i class="devicon-git-plain colored"></i>
+      <i class="devicon-github-plain colored"></i>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
