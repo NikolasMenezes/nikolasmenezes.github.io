@@ -9,31 +9,33 @@
   <title>NIkolas Menezes</title>
 
   <!--CSS do Projeto -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./dist/css/styles.min.css">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <!-- Dev Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <!-- Javascript -->
-  <script src="./assets/js/activeMenu.js" defer></script>
+  <script src="./dist/js/activeMenu.js" defer></script>
+  <script src="./dist/js/projects.js" defer></script>
 </head>
 
 <body>
 
   <header>
     <nav class="navbar">
-      <a href="index.html"><img src="./assets/img/Nikolas Menezes Logo.svg" alt="Menezes Logo" id="logo"></a>
+      <a href="index.html"><img src="./dist/img/Nikolas Menezes Logo.svg" alt="Menezes Logo" id="logo"></a>
+      <img src="./dist/img/menu_white_36dp.svg" class="menu-mobile">
       <ul class="navbar-list">
         <li class="navbar-list-links"><a href="#home" class="navbar-link current">Home</a></li>
         <li class="navbar-list-links"><a href="#about-me" class="navbar-link">Sobre Mim</a></li>
         <li class="navbar-list-links"><a href="#projects" class="navbar-link">Projetos</a></li>
-        <li class="navbar-list-links"><a href="#" class="navbar-link">Contato</a></li>
+        <li class="navbar-list-links"><a href="#contact" class="navbar-link">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="home" class="about">
-    <img src="./assets/img/undraw_code_review_re_woeb.svg" class="about-img" alt="">
+    <img src="./dist/img/undraw_code_review_re_woeb.svg" class="about-img" alt="">
     <div>
       <h1 class="about-title">Nikolas Menezes</h1>
       <p class="about-subtitle">Front-end developer</p>
@@ -59,20 +61,23 @@
           melhorar o meutrbalho
         </p>
       </div>
-      <img src="./assets/img/profile-pic.png" alt="Nikolas Menezes" class="about-me-img">
+      <img src="./dist/img/profile-pic.png" alt="Nikolas Menezes" class="about-me-img">
     </div>
 
     <div class="about-me-langs">
-      <h3 class="about-me-langs-title">Tecnologias</h3>
+      <h3 class="about-me-langs-title">Tecnologias do meu dia a dia</h3>
       <div class="about-me-langs-list">
         <i class="devicon-html5-plain colored"></i>
         <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
         <i class="devicon-sass-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-typescript-plain colored"></i>
         <i class="devicon-git-plain colored"></i>
       </div>
     </div>
   </section>
+
+  <a href="#projects" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
 
   <section id="projects">
     <h3>Projetos</h3>
@@ -81,7 +86,7 @@
       <div class="project-box">
         <div class="project">
           <div id="project1" class="project-img">
-            <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
+            <a href="#" class="see-more hover">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
           </div>
 
           <div class="project-description">
@@ -127,7 +132,7 @@
       </div>
       <div class="project-box">
         <div class="project">
-          <div id="project1" class="project-img">
+          <div id="project4" class="project-img">
             <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
           </div>
 
@@ -141,6 +146,10 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="contact">
+
   </section>
 
 </body>
