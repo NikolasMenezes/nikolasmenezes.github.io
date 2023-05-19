@@ -14,24 +14,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <!-- Dev Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+  <!-- Javascript -->
+  <script src="./assets/js/activeMenu.js" defer></script>
 </head>
 
 <body>
 
-  <header id="home">
+  <header>
     <nav class="navbar">
       <a href="index.html"><img src="./assets/img/Nikolas Menezes Logo.svg" alt="Menezes Logo" id="logo"></a>
       <ul class="navbar-list">
-        <li class="navbar-list-links"><a href="#home" class="current">Home</a></li>
-        <li class="navbar-list-links"><a href="#about-me">Sobre Mim</a></li>
-        <li class="navbar-list-links"><a href="#projects">Projetos</a></li>
-        <li class="navbar-list-links"><a href="#">Contato</a></li>
+        <li class="navbar-list-links"><a href="#home" class="navbar-link current">Home</a></li>
+        <li class="navbar-list-links"><a href="#about-me" class="navbar-link">Sobre Mim</a></li>
+        <li class="navbar-list-links"><a href="#projects" class="navbar-link">Projetos</a></li>
+        <li class="navbar-list-links"><a href="#" class="navbar-link">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="about" class="about">
+  <section id="home" class="about">
     <img src="./assets/img/undraw_code_review_re_woeb.svg" class="about-img" alt="">
     <div>
       <h1 class="about-title">Nikolas Menezes</h1>
@@ -43,7 +44,7 @@
       </ul>
     </div>
 
-  </main>
+  </section>
 
   <a href="#about-me" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
 
@@ -73,60 +74,73 @@
     </div>
   </section>
 
-  <a href="#projects" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
-
   <section id="projects">
+    <h3>Projetos</h3>
     <div class="projects-container">
 
       <div class="project-box">
         <div class="project">
-          <div id="project1">
+          <div id="project1" class="project-img">
             <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
           </div>
 
           <div class="project-description">
             <p class="project-title">Tela de cadastro Riot Games (Clone)</p>
-            <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br/>
+            <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br />
               Esse projeo foi realizado com o intuito de aprendizado. <br />
               Todos os direitos reservados.
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="project" id="project2">
-          <a href="#" >Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
+      <div class="project-box">
+        <div class="project">
+          <div id="project2" class="project-img">
+            <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
           <div class="project-description">
             <p class="project-title">Tela de cadastro Riot Games (Clone)</p>
-            <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br/>
+            <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br />
               Esse projeo foi realizado com o intuito de aprendizado. <br />
               Todos os direitos reservados.
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="project-box">
-          <div class="project" id="project3">
-            <a href="#">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
-            <div class="project-description">
-              <p class="project-title">Tela de cadastro Riot Games (Clone)</p>
-              <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br/>
-                Esse projeo foi realizado com o intuito de aprendizado. <br />
-                Todos os direitos reservados.
-              </div>
-            </div>
-
-            <div class="project" id="project4">
-              <a href="#">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
-              <div class="project-description">
-                <p class="project-title">Tela de cadastro Riot Games (Clone)</p>
-                <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br/>
-                  Esse projeo foi realizado com o intuito de aprendizado. <br />
-                  Todos os direitos reservados.
-                </div>
-              </div>
-            </div>
-
+      <div class="project-box">
+        <div class="project">
+          <div id="project3" class="project-img">
+            <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
           </div>
+
+          <div class="project-description">
+            <p class="project-title">Tela de cadastro Riot Games (Clone)</p>
+            <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br />
+              Esse projeo foi realizado com o intuito de aprendizado. <br />
+              Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-box">
+        <div class="project">
+          <div id="project1" class="project-img">
+            <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+
+          <div class="project-description">
+            <p class="project-title">Tela de cadastro Riot Games (Clone)</p>
+            <div class="project-about">Esse é um clone da tela de cadastro da empresa de jogos Riot Games.<br />
+              Esse projeo foi realizado com o intuito de aprendizado. <br />
+              Todos os direitos reservados.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </body>
