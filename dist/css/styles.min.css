@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-.projects-container .project-box #project4 .hover, .projects-container .project-box #project3 .hover, .projects-container .project-box #project2 .hover, .projects-container .project-box #project1 .hover {
-  opacity: 1;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +66,7 @@ header .navbar-list-links .current {
   justify-content: space-around;
   align-items: center;
   padding: 5rem 2rem;
-  height: 85vh;
+  height: 100vh;
 }
 .about-title, .about-subtitle {
   color: #0085ff;
@@ -100,8 +96,8 @@ header .navbar-list-links .current {
 }
 
 #about {
-  height: 80vh;
-  padding-top: 115px;
+  height: 100vh;
+  margin: 4rem 0;
 }
 
 #about-me-description {
@@ -137,7 +133,6 @@ header .navbar-list-links .current {
   text-align: center;
   font-size: 2rem;
   color: #fff;
-  padding: 2rem;
   margin-bottom: 2rem;
 }
 .about-me-langs-list {
@@ -147,16 +142,26 @@ header .navbar-list-links .current {
   padding: 2rem;
   margin-bottom: 2rem;
 }
+.about-me-langs-list-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+}
 .about-me-langs-list i {
   font-size: 50px;
 }
 
+#projects {
+  margin-bottom: 4rem;
+}
 #projects h3 {
   text-align: center;
   font-size: 2.5rem;
   color: #fff;
-  padding: 2rem;
-  margin: 2rem;
+  margin: 4rem 0;
 }
 
 .projects-container {
@@ -194,7 +199,7 @@ header .navbar-list-links .current {
 }
 .projects-container .project-box #project1:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/projeto1.png);
-  background-size: 110%;
+  background-size: 105%;
   background-position: center;
 }
 .projects-container .project-box #project1 .see-more {
@@ -228,7 +233,7 @@ header .navbar-list-links .current {
 }
 .projects-container .project-box #project2:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/projeto2.png);
-  background-size: 110%;
+  background-size: 105%;
   background-position: center;
 }
 .projects-container .project-box #project2 .see-more {
@@ -262,7 +267,7 @@ header .navbar-list-links .current {
 }
 .projects-container .project-box #project3:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/projeto3.png);
-  background-size: 110%;
+  background-size: 105%;
   background-position: center;
 }
 .projects-container .project-box #project3 .see-more {
@@ -285,7 +290,7 @@ header .navbar-list-links .current {
   border: 1px solid transparent;
 }
 .projects-container .project-box #project4 {
-  background-image: url("../img/projeto1.png");
+  background-image: url("../img/projeto4.png");
   width: 480px;
   height: 240px;
   background-size: cover;
@@ -295,8 +300,8 @@ header .navbar-list-links .current {
   border-radius: 10px;
 }
 .projects-container .project-box #project4:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/projeto1.png);
-  background-size: 110%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/projeto4.png);
+  background-size: 105%;
   background-position: center;
 }
 .projects-container .project-box #project4 .see-more {
@@ -323,17 +328,74 @@ header .navbar-list-links .current {
   opacity: 1;
 }
 
-#arrow-down {
+.contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  color: #9e9e9e;
-  cursor: pointer;
-  padding: 3rem 0;
+  border: 2px solid #454545;
+  border-radius: 10px;
+  margin: 2rem auto;
+  width: 80%;
+  position: relative;
 }
-#arrow-down:hover {
-  color: #0085ff;
+.contact-about {
+  width: 50%;
+  text-align: center;
+  padding: 2rem;
+}
+.contact-about-title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.contact-about-description {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.contact-about-image {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.contact-form {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact-form-input, .contact-form-message {
+  padding: 9px 14px;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+}
+.contact-form-input:hover, .contact-form-message:hover {
+  background-color: #9e9e9e;
+}
+.contact-form-input:focus, .contact-form-message:focus {
+  outline: none;
+}
+.contact-form-message {
+  resize: none;
+}
+.contact-form-btn {
+  padding: 10px 14px;
+  border: 1px solid #0085ff;
+  border-radius: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #0085ff;
+  transition: 300ms;
+  cursor: pointer;
+  width: 80%;
+}
+.contact-form-btn:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=styles.min.css.map */

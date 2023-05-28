@@ -6,7 +6,7 @@ const activeMenu = ():void =>{
 
   let len:number = sections.length
 
-  while(--len && window.scrollY + 105 < sections[len].offsetTop){}
+  while(--len && window.scrollY + 115 < sections[len].offsetTop){}
   links.forEach( link => link.classList.remove("current"));
   links[len].classList.add("current")
 }

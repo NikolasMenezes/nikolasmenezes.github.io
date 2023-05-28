@@ -35,7 +35,7 @@
   </header>
 
   <section id="home" class="about">
-    <img src="./dist/img/undraw_code_review_re_woeb.svg" class="about-img" alt="">
+    <img src="./dist/img/home-img.svg" class="about-img" alt="">
     <div>
       <h1 class="about-title">Nikolas Menezes</h1>
       <p class="about-subtitle">Front-end developer</p>
@@ -47,8 +47,6 @@
     </div>
 
   </section>
-
-  <a href="#about-me" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
 
   <section id="about-me">
     <div id="about-me-description">
@@ -67,17 +65,35 @@
     <div class="about-me-langs">
       <h3 class="about-me-langs-title">Tecnologias do meu dia a dia</h3>
       <div class="about-me-langs-list">
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-sass-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
-        <i class="devicon-typescript-plain colored"></i>
-        <i class="devicon-git-plain colored"></i>
+        <div class="about-me-langs-list-box">
+          <i class="devicon-html5-plain colored"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="about-me-langs-list-box">
+          <i class="devicon-css3-plain colored"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="about-me-langs-list-box">
+          <i class="devicon-sass-plain colored"></i>
+          <p>SASS</p>
+        </div>
+        <div class="about-me-langs-list-box">
+          <i class="devicon-javascript-plain colored"></i>
+          <p>JAVASCRIPT</p>
+        </div>
+        <div class="about-me-langs-list-box">
+          <i class="devicon-typescript-plain colored"></i>
+          <p>TYPESCRIPT</p>
+        </div>
+        <div class="about-me-langs-list-box">
+          <i class="devicon-git-plain colored"></i>
+          <p>GIT</p>
+        </div>
+
+
       </div>
     </div>
   </section>
-
-  <a href="#projects" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
 
   <section id="projects">
     <h3>Projetos</h3>
@@ -148,7 +164,25 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
+
+    <div class="contact-about">
+      <p class="contact-about-title">
+        Vamos Conversar!
+      </p>
+      <p class="contact-about-description">
+        Entre em contato para esclarecer quaisquer dúvidas ou detalhes sobre os meus serviços e disponibilidade.
+      </p>
+      <img src="./dist/img/form-img.svg" alt="imagem formulário" class="contact-about-image">
+    </div>
+
+    <form class="contact-form">
+      <input type="text" class="contact-form-input" placeholder="Seu nome">
+      <input type="email" class="contact-form-input" placeholder="Email">
+      <input type="text" class="contact-form-input" placeholder="Assunto">
+      <textarea cols="30" rows="6" placeholder="Escreva sua mensagem" class="contact-form-message"></textarea>
+      <button type="submit" class="contact-form-btn">Enviar Mensagem <i class="bi bi-send"></i></button>
+    </form>
 
   </section>
 
