@@ -3,5 +3,21 @@
   width: 200px
   height: 100px
 
-  .footer
+  .logofooter
     margin: 0
+
+@mixin celularMenor
+  @media (max-width: 420px)
+    @content
+
+@mixin celular
+  @media (max-width: 520px)
+    @content
+    
+@mixin tablet
+  @media (max-width: 768px)
+    @content
+
+@mixin laptop
+  @media (max-width: 1100px)
+    @content
