@@ -1,0 +1,34 @@
+@use '../1-base/variables'
+  
+.about
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: 5rem 2rem
+  height: 100vh
+
+  &-title, &-subtitle
+    color: variables.$primary-color
+    font-size: 3.5rem
+    text-align: center
+
+  &-subtitle
+    font-size:2rem
+
+  &-img
+    width: 400px
+
+  &-social
+    list-style: none
+    display: flex
+    gap: 25px
+    justify-content: center
+    padding: 1rem
+
+    a
+      color: variables.$secondary-text
+      font-size: 1.5rem
+      transition: 300ms
+
+      &:hover
+        color: variables.$primary-color

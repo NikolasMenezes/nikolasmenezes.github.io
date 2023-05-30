@@ -1,0 +1,42 @@
+@use '../1-base/variables'
+  
+header 
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1
+  background-color: variables.$bg-color
+
+  .navbar
+    display: flex
+    justify-content: space-between
+    padding: .5rem 2rem
+    margin: 1rem 2rem
+    border: 1px solid transparent
+    border-radius: 50px
+
+    .menu-mobile
+      display: none
+
+    &-list
+      display: flex
+      list-style: none
+      justify-content: center
+      gap: 25px
+
+      &-links
+        align-self: center
+
+        a
+          text-decoration: none
+          color: variables.$secondary-text 
+          font-size: 1.1rem
+          text-transform: uppercase
+          transition: 300ms
+
+          &:hover
+            color: variables.$primary-color
+        
+        .current
+          border-bottom: 1px solid variables.$primary-color
+          color: variables.$primary-color

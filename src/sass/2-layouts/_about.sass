@@ -1,0 +1,57 @@
+@use '../1-base/variables'
+  
+#about
+  height:100vh
+  margin: 4rem 0
+
+#about-me-description
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 10%
+  height: 60vh
+
+  .about-me
+    color: variables.$primary-color
+    width: 40%
+
+    &-title
+      font-size: 2.5rem
+    
+    &-subtitle
+      line-height: 1.5
+      font-size: 1.1rem
+      margin-top: 1rem
+      color: variables.$text-color
+
+  .about-me-img
+    width: 250px
+    height: 250px
+
+.about-me-langs
+  height: 30vh
+  margin: 3rem 0
+
+  &-title
+    text-align: center
+    font-size: 2rem
+    color: variables.$text-color
+    margin-bottom: 2rem
+
+  &-list
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding:2rem
+    margin-bottom: 2rem
+
+    &-box
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      color: variables.$text-color
+      gap: 10px
+
+    i
+      font-size: 50px
