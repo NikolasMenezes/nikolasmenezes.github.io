@@ -1,4 +1,5 @@
 @use '../1-base/variables'
+@use '../3-modules/utilities'
   
 .contact
   display: flex
@@ -28,10 +29,17 @@
     width: 80%
     max-width: 1080px
 
+    @include utilities.tablet
+      justify-content: center
+      align-items: center
+
     &-image
       height: 400px
       margin-bottom: 1rem
       padding-left: 1rem
+
+      @include utilities.tablet
+        display: none
 
   &-form
     width: 50%
@@ -41,6 +49,9 @@
     justify-content: center
     align-items: center
     gap: 10px
+
+    @include utilities.tablet
+      width: 90%
 
     &-input, &-message
       padding: 9px 14px

@@ -1,4 +1,5 @@
 @use "../1-base/variables"
+@use "../3-modules/utilities"
 
 .footer
   display: flex
@@ -7,11 +8,18 @@
   padding: 3rem
   box-shadow: 0px -1px 35px -10px rgba(0,102,255,1)
 
+  @include utilities.tablet
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    gap: 30px
+
   &-brand
     position: relative
     display: flex
     flex-direction: column
     gap: 30px 
+
 
     .logo
       width: 180px
@@ -33,16 +41,30 @@
     display: flex
     gap: 2rem
 
+    @include utilities.tablet
+      flex-direction: column-reverse
+
     &-list
       font-size: 20px
       padding: 3rem
       border-left: 1px solid variables.$primary-color
+
+      &:last-child
+        @include utilities.tablet
+          display: flex
+          gap: 20px
+
+      @include utilities.tablet
+        border-left: none
+        padding:0
 
 
       li a
         color: variables.$secondary-text
         transition: .3s
         margin-bottom: 20px
+        text-transform: uppercase
+        font-size: 1rem
 
         i
           font-size: 25px

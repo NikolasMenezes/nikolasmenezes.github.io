@@ -17,6 +17,7 @@
   <!-- Javascript -->
   <script src="./dist/js/activeMenu.js" defer></script>
   <script src="./dist/js/projects.js" defer></script>
+  <script src="./dist/js/menuToggle.js" defer></script>
 </head>
 
 <body>
@@ -32,6 +33,16 @@
         <li class="navbar-list-links"><a href="#contact" class="navbar-link">Contato</a></li>
       </ul>
     </nav>
+
+    <div class="menu-toggle hide">
+      <ul class="menu-toggle-list">
+        <li class="menu-toggle-list-links"><a href="#home" class="menu-toggle-link current">Home</a></li>
+        <li class="menu-toggle-list-links"><a href="#about-me" class="menu-toggle-link">Sobre Mim</a></li>
+        <li class="menu-toggle-list-links"><a href="#projects" class="menu-toggle-link">Projetos</a></li>
+        <li class="menu-toggle-list-links"><a href="#contact" class="menu-toggle-link">Contato</a></li>
+      </ul>
+    </div>
+
   </header>
 
   <section id="home" class="about">
@@ -102,7 +113,7 @@
       <div class="project-box">
         <div class="project">
           <div id="project1" class="project-img">
-            <a href="#" class="see-more hover">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
+            <a href="#" class="see-more">Ver Projeto <i class="bi bi-arrow-up-right"></i></a>
           </div>
 
           <div class="project-description">
@@ -224,6 +235,7 @@
   <div class="rodape">
     <p>Nikolas Menezes &copy; 2023</p>
   </div>
+
 </body>
 
 </html>
