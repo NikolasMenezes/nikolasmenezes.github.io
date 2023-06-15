@@ -1,0 +1,53 @@
+@use '../1-base/variables'
+@use 'mixins'
+
+.btn
+  padding: 8px 12px
+  border-radius: 5px
+  background-color: variables.$primary-color
+  border: 1px solid transparent
+  text-transform: uppercase
+  transition: variables.$transition
+
+
+  &:hover
+    background-color: transparent
+    border: 1px solid variables.$primary-color
+
+  &-rounded
+    border: 1px solid variables.$light-color
+    color: variables.$light-color
+    background-color: transparent
+
+  &-callout
+    height: 20px
+    line-height: 20px
+    border-radius: 30px
+    color: variables.$light-color
+    padding: 16px 22px 36px 22px
+
+
+    &:hover
+      color: variables.$primary-color
+  
+  &-services
+    padding: 12px 24px
+    color: variables.$light-color
+    border-radius: 30px
+    left: 44%
+    position: relative
+
+    @include mixins.laptop
+      left: 37.5%
+    
+    @include mixins.tablet
+      left: 31.5%
+
+    @include mixins.celular
+      left: 22.5%
+
+    @include mixins.celularMenor
+      left: 10%  
+
+    &:hover
+      color: variables.$primary-color

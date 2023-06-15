@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços de Host</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+                <nav class="navbar-container">
+                    <div class="logo">
+                        <a href="#"><img src="img/hdchostlogo.png" alt="Logo hDC" id="logo"></a>
+                    </div>
+
+                    <ul class="list-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Planos</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#" class="default-btn" id="open-modal">Login</a></li>
+                    </ul>
+
+                    <div class="menu-toggle">
+                        <img src="./img/menu_white_36dp.svg">
+                    </div>
+
+                    <div class="mobile-menu-items off">
+                        <ul class="mobile-menu-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Planos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            <div id="banner-container">
+                <h1 id="main-title">Cloud Services</h1>
+                <p id="main-subtitle">Os melhores planos para qualquer tipo de projeto!</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="work-container">
+                <ul id="specialties">
+                    <li>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Segurança</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sapien lacinia, condimentum
+                            massa non, sagittis nulla. Fusce elementum libero odio, in volutpat turpis luctus a
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Velocidade</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sapien lacinia, condimentum
+                            massa non, sagittis nulla. Fusce elementum libero odio, in volutpat turpis luctus a
+                        </p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-comments"></i>
+                        <h3>Supote</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a sapien lacinia, condimentum
+                            massa non, sagittis nulla. Fusce elementum libero odio, in volutpat turpis luctus a
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="pricing-conatainer">
+                <h1 id="pricing-title">Planos e Preços</h1>
+                <p id="pricing-subtitle">Selecione o plano perfeito para você</p>
+                <div id="plans-container">
+                    <ul class="plans">
+                        <li class="price">R$15/Mês</li>
+                        <li class="name">Econômico</li>
+                        <li>2GB de Espaço</li>
+                        <li>25 Contas de Email</li>
+                        <li>10 Sub-domínios</li>
+                        <li>C-Panel</li>
+                        <li>Suporte 24/7</li>
+                        <li class="plan-btn">Escolher</li>
+                    </ul>
+                    <ul class="plans">
+                        <li class="price">R$30/Mês</li>
+                        <li class="name">Moderado</li>
+                        <li>5GB de Espaço</li>
+                        <li>50 Contas de Email</li>
+                        <li>50 Sub-domínios</li>
+                        <li>C-Panel</li>
+                        <li>Suporte 24/7</li>
+                        <li class="plan-btn">Escolher</li>
+                    </ul>
+                    <ul class="plans">
+                        <li class="price recommended">R$50/Mês</li>
+                        <li class="name">Avanançado</li>
+                        <li>10GB de Espaço</li>
+                        <li>100 Contas de Email</li>
+                        <li>100 Sub-domínios</li>
+                        <li>C-Panel</li>
+                        <li>Suporte 24/7</li>
+                        <li class="plan-btn recommended">Escolher</li>
+                    </ul>
+                    <ul class="plans">
+                        <li class="price">R$100/Mês</li>
+                        <li class="name">Expert</li>
+                        <li>50GB de Espaço</li>
+                        <li>200 Contas de Email</li>
+                        <li>200 Sub-domínios</li>
+                        <li>C-Panel</li>
+                        <li>Suporte 24/7</li>
+                        <li class="plan-btn">Escolher</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="searchdomain-container">
+                <h2>Busque seu domínio</h2>
+                <p>Verifique se o domínio que deseja está disponível</p>
+                <form id="domain-form">
+                    <input type="text" name="domain" placeholder="Digite o domínio desejado"><br>
+                    <input type="submit" value="Buscar domínio" id="domain-btn">
+                </form>
+            </section>
+
+            <section class="contactus-container">
+                <h2>Entre em contato</h2>
+                <p>Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para seu negócio</p>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Seu nome">
+                    <input type="email" name="email" placeholder="Seu email"><br>
+                    <textarea name="message" cols="20" rows="5" placeholder="Escreva sua mensagem"></textarea><br>
+                    <input type="submit" value="Enviar" id="contact-btn">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p id="copyright">Nikolas Menezes &copy; 2023</p>
+        </footer>
+
+        <!-- Modal login -->
+        <div id="fade" class="hide"></div>
+        <div id="modal-login" class="hide">
+            <div id="modal-header">
+                <h4>Faça login na sua conta</h4>
+                <button id="close-modal">X</button>
+            </div>
+            <form id="modal-body">
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="password" placeholder="Senha"><br>
+                <input type="submit" value="ENTRAR" id="modal-btn">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

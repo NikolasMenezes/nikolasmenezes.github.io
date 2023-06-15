@@ -11,19 +11,25 @@
     margin: 4rem 0
 
 .projects-container
-  display: flex
-  align-items: center
-  justify-content: center
-  flex-wrap: wrap
-  gap: 15%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  padding: 2rem
+
+  @include utilities.celular
+    grid-template-columns: 1fr
 
   .project-box
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
     margin-bottom: 2.5rem
     z-index: 0
 
     .project
       text-align: center
       color: variables.$text-color
+      max-width: 95%
       
       &-title
         font-size: 1.1rem
@@ -33,22 +39,15 @@
         color: variables.$secondary-text
         line-height: 1.5
         font-size: .9rem
+        text-align: center
 
     #project1
       background: url(../img/projeto1.png)
-      width: 480px
-      height: 240px
-      background-size: cover
-      background-position: center
-      margin-bottom: 1rem
-      position: relative
-      border-radius: 10px
-
+      @include utilities.projectsPattern
 
       &:hover
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/projeto1.png)
-        background-size: 105%
-        background-position: center
+        @include utilities.projectsHover
 
 
       .see-more
@@ -75,18 +74,11 @@
     
     #project2
       background-image: url('../img/projeto2.png')
-      width: 480px
-      height: 240px
-      background-size: cover
-      background-position: center
-      margin-bottom: 1rem
-      position: relative
-      border-radius: 10px
+      @include utilities.projectsPattern
       
       &:hover
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/projeto2.png)
-        background-size: 105%
-        background-position: center
+        @include utilities.projectsHover
 
       .see-more
         position: absolute
@@ -112,18 +104,11 @@
 
     #project3
       background-image: url('../img/projeto3.png')
-      width: 480px
-      height: 240px
-      background-size: cover
-      background-position: center
-      margin-bottom: 1rem
-      position: relative
-      border-radius: 10px
+      @include utilities.projectsPattern
 
       &:hover
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/projeto3.png)
-        background-size: 105%
-        background-position: center
+        @include utilities.projectsHover
 
       .see-more
         position: absolute
@@ -148,18 +133,11 @@
     
     #project4
       background-image: url('../img/projeto4.png')
-      width: 480px
-      height: 240px
-      background-size: cover
-      background-position: center
-      margin-bottom: 1rem
-      position: relative
-      border-radius: 10px
+      @include utilities.projectsPattern
 
       &:hover
-        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/projeto4.png)
-        background-size: 105%
-        background-position: center
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/projeto4.png)
+        @include utilities.projectsHover
 
 
       .see-more
