@@ -47,7 +47,7 @@ header .navbar {
   border: 1px solid transparent;
   border-radius: 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   header .navbar {
     padding: 0;
   }
@@ -144,7 +144,7 @@ header .hide {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .about-title, .about-subtitle {
     font-size: 2rem;
   }
@@ -231,7 +231,7 @@ header .hide {
   margin-top: 1rem;
   color: #fff;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   #about-me-description .about-me-subtitle {
     font-size: 1rem;
   }
@@ -251,7 +251,7 @@ header .hide {
   color: #fff;
   margin-bottom: 2rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .about-me-langs-title {
     font-size: 1.3rem;
   }
@@ -265,7 +265,7 @@ header .hide {
   margin: 0 auto 2rem;
   max-width: 1080px;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .about-me-langs-list {
     justify-content: space-between;
   }
@@ -278,7 +278,7 @@ header .hide {
   color: #fff;
   gap: 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .about-me-langs-list-box p {
     display: none;
   }
@@ -287,7 +287,7 @@ header .hide {
   width: 50px;
   height: 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .about-me-langs-list-box-tech {
     width: 40px;
     height: 40px;
@@ -339,7 +339,7 @@ header .hide {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .projects-container .project-box .project-title {
     width: 90%;
   }
@@ -350,7 +350,7 @@ header .hide {
   font-size: 0.9rem;
   text-align: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .projects-container .project-box .project-about {
     width: 90%;
   }
@@ -373,7 +373,7 @@ header .hide {
     height: 200px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .projects-container .project-box #project1 {
     width: 300px;
     height: 150px;
@@ -426,7 +426,7 @@ header .hide {
     height: 200px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .projects-container .project-box #project2 {
     width: 300px;
     height: 150px;
@@ -479,7 +479,7 @@ header .hide {
     height: 200px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .projects-container .project-box #project3 {
     width: 300px;
     height: 150px;
@@ -532,7 +532,7 @@ header .hide {
     height: 200px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .projects-container .project-box #project4 {
     width: 300px;
     height: 150px;

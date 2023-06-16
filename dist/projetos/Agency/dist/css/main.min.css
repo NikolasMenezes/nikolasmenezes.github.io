@@ -136,7 +136,7 @@ main .services {
 }
 @media (max-width: 768px) and (max-width: 420px) {
   main .services {
-    margin: 3rem 0;
+    margin: 1.5rem 0;
     padding: 0;
   }
 }
@@ -456,27 +456,14 @@ footer .footer-container-links ul li a:hover {
   padding: 12px 24px;
   color: #fff;
   border-radius: 30px;
-  left: 44%;
-  position: relative;
-}
-@media (max-width: 1100px) {
-  .btn-services {
-    left: 37.5%;
-  }
-}
-@media (max-width: 768px) {
-  .btn-services {
-    left: 31.5%;
-  }
-}
-@media (max-width: 520px) {
-  .btn-services {
-    left: 22.5%;
-  }
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
 }
 @media (max-width: 420px) {
   .btn-services {
-    left: 10%;
+    width: 300px;
+    text-align: center;
   }
 }
 .btn-services:hover {

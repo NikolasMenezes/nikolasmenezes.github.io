@@ -34,20 +34,14 @@
     padding: 12px 24px
     color: variables.$light-color
     border-radius: 30px
-    left: 44%
-    position: relative
-
-    @include mixins.laptop
-      left: 37.5%
-    
-    @include mixins.tablet
-      left: 31.5%
-
-    @include mixins.celular
-      left: 22.5%
+    left: 50%
+    position: absolute
+    transform: translate(-50%)
 
     @include mixins.celularMenor
-      left: 10%  
+      width: 300px
+      text-align: center
+
 
     &:hover
       color: variables.$primary-color
