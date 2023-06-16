@@ -8,8 +8,10 @@
 .about-me-title
   font-size: 2.5rem
   color: variables.$primary-color
-  text-align: center      
-
+  text-align: center     
+  
+  @include utilities.celular
+    margin-bottom: 2rem
 
 #about-me-description
   display: flex
@@ -20,11 +22,16 @@
 
   @include utilities.celular
     flex-direction: column-reverse
-    justify-contetn: flex-start
+    height: auto
+     gap: 2rem
 
   .about-me
     color: variables.$primary-color
     width: 40%
+
+    @include utilities.celular
+      width: 90%
+      text-align: center
 
     &-title
       font-size: 2.5rem

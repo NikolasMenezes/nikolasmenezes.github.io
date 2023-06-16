@@ -46,6 +46,13 @@ header .navbar {
   border: 1px solid transparent;
   border-radius: 50px;
 }
+@media (max-width: 550px) {
+  header .navbar .logo {
+    margin-top: -30px;
+    width: 180px;
+    height: 150px;
+  }
+}
 header .navbar .menu-mobile {
   display: none;
   width: 45px;
@@ -133,8 +140,18 @@ header .hide {
   font-size: 3.5rem;
   text-align: center;
 }
+@media (max-width: 550px) {
+  .about-title, .about-subtitle {
+    font-size: 2.5rem;
+  }
+}
 .about-subtitle {
   font-size: 2rem;
+}
+@media (max-width: 550px) {
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
 }
 .about-img {
   width: 400px;
@@ -170,6 +187,11 @@ header .hide {
   color: #0085ff;
   text-align: center;
 }
+@media (max-width: 550px) {
+  .about-me-title {
+    margin-bottom: 2rem;
+  }
+}
 
 #about-me-description {
   display: flex;
@@ -181,12 +203,19 @@ header .hide {
 @media (max-width: 550px) {
   #about-me-description {
     flex-direction: column-reverse;
-    justify-contetn: flex-start;
+    height: auto;
+    height-gap: 2rem;
   }
 }
 #about-me-description .about-me {
   color: #0085ff;
   width: 40%;
+}
+@media (max-width: 550px) {
+  #about-me-description .about-me {
+    width: 90%;
+    text-align: center;
+  }
 }
 #about-me-description .about-me-title {
   font-size: 2.5rem;
