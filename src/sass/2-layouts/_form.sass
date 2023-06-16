@@ -38,6 +38,9 @@
       margin-bottom: 1rem
       padding-left: 1rem
 
+
+      @include utilities.laptop
+        height: 300px
       @include utilities.tablet
         display: none
 
@@ -53,6 +56,9 @@
     @include utilities.tablet
       width: 90%
       padding: 0
+    @include utilities.celular
+      width: 100%
+      
 
     &-input, &-message
       padding: 9px 14px

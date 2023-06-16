@@ -7,7 +7,7 @@
     margin: 0
 
 @mixin celularMenor
-  @media (max-width: 420px)
+  @media (max-width: 480px)
     @content
 
 @mixin celular
@@ -34,7 +34,12 @@
   border-radius: 10px
   background-repeat: no-repeat
 
+  @include celularMenor
+    width: 90%
+
 @mixin projectsHover
   background-size: 105%
   background-position: center
+  background-size: cover
   background-repeat: no-repeat
+

@@ -1,0 +1,102 @@
+@use '../1-base/variables'
+@use '../3-modules/mixins'
+
+.portfolio
+  background-color: variables.$secondary-bg
+  padding: 3rem
+  margin-top: 5rem
+  
+  &-title
+    text-align: center
+    font-size: 3rem
+    margin-bottom: 4rem
+
+    @include mixins.celular
+    font-size: 2rem
+
+  .projects-container
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 20px
+    padding-bottom: 2rem
+
+    @include mixins.laptop
+      flex-direction: column
+      gap: 20px
+
+    .job-container
+      padding: 1rem
+      width: 400px
+      height: 200px
+      border: 1px solid transparent
+      color: variables.$light-color
+      transition: variables.$transition   
+
+      @include mixins.laptop
+        width: 85%
+        height: 250px
+      
+      @include mixins.celular
+        width: 95%
+        height: 250px
+
+      &.first
+        height: 410px
+
+        @include mixins.laptop
+          width: 85%
+          height: 250px
+    
+        @include mixins.celular
+          width: 95%
+          height: 250px
+
+      &-title
+        font-size: 1.2rem
+        opacity: 0
+
+      &-description
+        font-size: .9rem
+        opacity: 0
+      
+    .hover
+      opacity: 1
+
+.portfolio-box
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+  @include mixins.laptop
+    align-items: center
+    gap: 20px
+
+#job
+  &1
+    @include mixins.jobImage($job:1)
+
+  &2
+    @include mixins.jobImage($job:2)
+    
+  &3
+    @include mixins.jobImage($job:3)
+  &4
+    @include mixins.jobImage($job:4)
+  &5
+    @include mixins.jobImage($job:5)
+
+#job1:hover
+  @include mixins.jobHover($job:1)
+
+#job2:hover
+  @include mixins.jobHover($job:2)
+
+#job3:hover
+  @include mixins.jobHover($job:3)
+
+#job4:hover
+  @include mixins.jobHover($job:4)
+
+#job5:hover
+  @include mixins.jobHover($job:5)

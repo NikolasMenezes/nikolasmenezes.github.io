@@ -23,7 +23,7 @@
   @include utilities.celular
     flex-direction: column-reverse
     height: auto
-     gap: 2rem
+    gap: 2rem
 
   .about-me
     color: variables.$primary-color
@@ -32,6 +32,7 @@
     @include utilities.celular
       width: 90%
       text-align: center
+      font-size: 1.2rem
 
     &-title
       font-size: 2.5rem
@@ -41,6 +42,9 @@
       font-size: 1.1rem
       margin-top: 1rem
       color: variables.$text-color
+        
+      @include utilities.celularMenor
+        font-size: 1rem
 
   .about-me-img
     width: 250px
@@ -56,12 +60,17 @@
     color: variables.$text-color
     margin-bottom: 2rem
 
+    @include utilities.celularMenor
+        font-size: 1.5rem
+
   &-list
     display: flex
-    justify-content: space-around
+    justify-content: space-evenly
     align-items: center
+    position: relative
     padding:2rem
-    margin-bottom: 2rem
+    margin: 0 auto 2rem
+    max-width: 1080px
 
     &-box
       display: flex
@@ -71,5 +80,7 @@
       color: variables.$text-color
       gap: 10px
 
-    i
-      font-size: 50px
+      &-tech
+        width: 50px
+        height: 50px
+      

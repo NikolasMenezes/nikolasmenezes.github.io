@@ -15,8 +15,12 @@
   grid-template-columns: 1fr 1fr
   padding: 2rem
 
-  @include utilities.celular
+  @include utilities.tablet
     grid-template-columns: 1fr
+
+  @include utilities.celularMenor
+    grid-template-columns: 110%
+    padding: 0px 
 
   .project-box
     display: flex
@@ -35,11 +39,16 @@
         font-size: 1.1rem
         margin-bottom: 1rem
       
+        @include utilities.celularMenor
+          width: 90%
       &-about
         color: variables.$secondary-text
         line-height: 1.5
         font-size: .9rem
-        text-align: center
+        text-align: center  
+
+        @include utilities.celularMenor
+          width: 90%
 
     #project1
       background: url(../img/projeto1.png)

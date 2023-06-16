@@ -1,0 +1,61 @@
+@use '../1-base/variables'
+@use '../3-modules/mixins'
+
+footer
+  width: 100%
+  background-color: variables.$footer-bg
+  display: grid
+  place-items: center
+
+  @include mixins.tablet
+    display: block
+
+  .footer-container
+    width: 70%
+    padding: 2rem
+    display: flex
+    color: variables.$text-color
+    justify-content: space-around
+    align-items: center
+    gap: 2rem
+
+    @include mixins.tablet
+      flex-direction: column-reverse
+      align-items: flex-start
+      justify-content: flex-start
+      padding: 2rem
+
+    &-brand
+      width:50%
+      display: flex
+      flex-direction: column 
+      gap: 40px
+
+      @include mixins.tablet
+        width: 100%
+
+      &-about h1
+        margin-bottom: 10px
+        color: variables.$light-color
+        font-size: 1.5rem
+
+    &-links
+      display: flex
+      gap: 30px
+
+      @include mixins.tablet
+        flex-direction: column
+
+      &-box-title
+        margin-bottom: 20px
+        color: variables.$light-color
+
+    &-links ul li 
+      margin-bottom: 7px
+
+    &-links ul li a
+      color: variables.$text-color
+
+
+      &:hover
+        color: variables.$light-color
