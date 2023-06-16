@@ -144,6 +144,11 @@ header .hide {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 480px) {
+  .about-title, .about-subtitle {
+    font-size: 2rem;
+  }
+}
 .about-subtitle {
   font-size: 2rem;
 }
@@ -248,7 +253,7 @@ header .hide {
 }
 @media (max-width: 480px) {
   .about-me-langs-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .about-me-langs-list {
@@ -260,6 +265,11 @@ header .hide {
   margin: 0 auto 2rem;
   max-width: 1080px;
 }
+@media (max-width: 480px) {
+  .about-me-langs-list {
+    justify-content: space-between;
+  }
+}
 .about-me-langs-list-box {
   display: flex;
   flex-direction: column;
@@ -268,9 +278,20 @@ header .hide {
   color: #fff;
   gap: 10px;
 }
+@media (max-width: 480px) {
+  .about-me-langs-list-box p {
+    display: none;
+  }
+}
 .about-me-langs-list-box-tech {
   width: 50px;
   height: 50px;
+}
+@media (max-width: 480px) {
+  .about-me-langs-list-box-tech {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 #projects {
@@ -287,16 +308,18 @@ header .hide {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2rem;
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
 }
 @media (max-width: 940px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .projects-container {
-    grid-template-columns: 110%;
-    padding: 0px;
+    padding: 0px 0px 0px 25px;
   }
 }
 .projects-container .project-box {
@@ -344,9 +367,16 @@ header .hide {
   border-radius: 10px;
   background-repeat: no-repeat;
 }
+@media (max-width: 550px) {
+  .projects-container .project-box #project1 {
+    width: 400px;
+    height: 200px;
+  }
+}
 @media (max-width: 480px) {
   .projects-container .project-box #project1 {
-    width: 90%;
+    width: 300px;
+    height: 150px;
   }
 }
 .projects-container .project-box #project1:hover {
@@ -390,9 +420,16 @@ header .hide {
   border-radius: 10px;
   background-repeat: no-repeat;
 }
+@media (max-width: 550px) {
+  .projects-container .project-box #project2 {
+    width: 400px;
+    height: 200px;
+  }
+}
 @media (max-width: 480px) {
   .projects-container .project-box #project2 {
-    width: 90%;
+    width: 300px;
+    height: 150px;
   }
 }
 .projects-container .project-box #project2:hover {
@@ -436,9 +473,16 @@ header .hide {
   border-radius: 10px;
   background-repeat: no-repeat;
 }
+@media (max-width: 550px) {
+  .projects-container .project-box #project3 {
+    width: 400px;
+    height: 200px;
+  }
+}
 @media (max-width: 480px) {
   .projects-container .project-box #project3 {
-    width: 90%;
+    width: 300px;
+    height: 150px;
   }
 }
 .projects-container .project-box #project3:hover {
@@ -482,9 +526,16 @@ header .hide {
   border-radius: 10px;
   background-repeat: no-repeat;
 }
+@media (max-width: 550px) {
+  .projects-container .project-box #project4 {
+    width: 400px;
+    height: 200px;
+  }
+}
 @media (max-width: 480px) {
   .projects-container .project-box #project4 {
-    width: 90%;
+    width: 300px;
+    height: 150px;
   }
 }
 .projects-container .project-box #project4:hover {

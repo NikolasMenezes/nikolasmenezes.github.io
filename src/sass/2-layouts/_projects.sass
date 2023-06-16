@@ -14,13 +14,15 @@
   display: grid
   grid-template-columns: 1fr 1fr
   padding: 2rem
+  max-width: 1440px
+  position: relative
+  margin: auto
 
   @include utilities.tablet
     grid-template-columns: 1fr
 
-  @include utilities.celularMenor
-    grid-template-columns: 110%
-    padding: 0px 
+  @include utilities.celular
+    padding: 0px 0px 0px 25px
 
   .project-box
     display: flex

@@ -61,7 +61,7 @@
     margin-bottom: 2rem
 
     @include utilities.celularMenor
-        font-size: 1.5rem
+        font-size: 1.3rem
 
   &-list
     display: flex
@@ -72,6 +72,9 @@
     margin: 0 auto 2rem
     max-width: 1080px
 
+    @include utilities.celularMenor
+      justify-content: space-between
+
     &-box
       display: flex
       flex-direction: column
@@ -80,7 +83,15 @@
       color: variables.$text-color
       gap: 10px
 
+      p
+        @include utilities.celularMenor
+          display: none
+
       &-tech
         width: 50px
         height: 50px
+
+        @include utilities.celularMenor
+          width: 40px
+          height: 40px
       
